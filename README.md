@@ -1,11 +1,12 @@
-# Recommendation-Systems
+## Recommendation-Systems
 Recommendation Engine filter out the poducts that a paticular customer would be interested in or would buy based on his/her previous buying history but if the customer is new then this method will fail as we have no previous data from the customer.So,to tackle this issue different methods are used,for example oftern the most popular products are recommended.This recommendations would not be must accurate as they are not customer dependent and are same for all new customers.
 
 So  recommndation engines above are:
 1) Collabrative Recommender System
 2) Content based Recommender System
 3) Popularity based Recommender System
-Demographic Filtering 
+
+# Demographic Filtering 
 
   we need a metric to score or rate movie
   Calculate the score for every movie
@@ -24,10 +25,10 @@ Demographic Filtering
   C is the mean vote across the whole report
   We already have v(vote_count) and R (vote_average) and C can be calculated as
 
-Content Based Filtering
+#Content Based Filtering
 In this recommender system the content of the movie (overview, cast, crew, keyword, tagline etc) is used to find its similarity with other movies. Then the movies that are most likely to be similar are recommended.
 
-  Plot description based Recommender
+  #Plot description based Recommender
   We will compute pairwise similarity scores for all movies based on their plot descriptions and recommend movies based on that similarity score. The plot 
   description is given in the overview feature of our dataset
   we'll compute Term Frequency-Inverse Document Frequency (TF-IDF) vectors for each overview.
@@ -41,7 +42,7 @@ In this recommender system the content of the movie (overview, cast, crew, keywo
   is independent of magnitude and is relatively easy and fast to calculate. Mathematically, it is defined as follows:
             ![image](https://user-images.githubusercontent.com/56895070/121231318-e6ae1d80-c8ad-11eb-8883-4b2f7406211e.png)
             
-  Credits, Genres and Keywords Based Recommender
+  #Credits, Genres and Keywords Based Recommender
   It goes without saying that the quality of our recommender would be increased with the usage of better metadata. That is exactly what we are going to do in this 
   section. We are going to build a recommender based on the following metadata: the 3 top actors, the director, related genres and the movie plot keywords.
 
