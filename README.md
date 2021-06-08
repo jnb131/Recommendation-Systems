@@ -5,6 +5,23 @@ So  recommndation engines above are:
 1) Collabrative Recommender System
 2) Content based Recommender System
 3) Popularity based Recommender System
+Demographic Filtering 
+
+  we need a metric to score or rate movie
+  Calculate the score for every movie
+  Sort the scores and recommend the best rated movie to the users.
+  We can use the average ratings of the movie as the score but using this won't be fair enough since a movie with 8.9 average rating and only 3 votes cannot be 
+  considered better than the movie with 7.8 as as average rating but 40 votes. So, I'll be using IMDB's weighted rating (wr) which is given as :-
+  
+  
+        ![image](https://user-images.githubusercontent.com/56895070/121231713-5b815780-c8ae-11eb-87d5-9a36994fedc2.png)  
+   where,
+
+  v is the number of votes for the movie;
+  m is the minimum votes required to be listed in the chart;
+  R is the average rating of the movie; And
+  C is the mean vote across the whole report
+  We already have v(vote_count) and R (vote_average) and C can be calculated as
 
 Content Based Filtering
 In this recommender system the content of the movie (overview, cast, crew, keyword, tagline etc) is used to find its similarity with other movies. Then the movies that are most likely to be similar are recommended.
@@ -21,5 +38,15 @@ In this recommender system the content of the movie (overview, cast, crew, keywo
 
   We will be using the cosine similarity to calculate a numeric quantity that denotes the similarity between two movies. We use the cosine similarity score since it 
   is independent of magnitude and is relatively easy and fast to calculate. Mathematically, it is defined as follows:
-  ![image](https://user-images.githubusercontent.com/56895070/121231318-e6ae1d80-c8ad-11eb-8883-4b2f7406211e.png)
+            ![image](https://user-images.githubusercontent.com/56895070/121231318-e6ae1d80-c8ad-11eb-8883-4b2f7406211e.png)
+            
+  Credits, Genres and Keywords Based Recommender
+  It goes without saying that the quality of our recommender would be increased with the usage of better metadata. That is exactly what we are going to do in this 
+  section. We are going to build a recommender based on the following metadata: the 3 top actors, the director, related genres and the movie plot keywords.
+
+  From the cast, crew and keywords features, we need to extract the three most important actors, the director and the keywords associated with that movie. Right  
+  
+  The next steps are the same as what we did with our plot description based recommender. One important difference is that we use the CountVectorizer() instead of 
+  TF-IDF. This is because we do not want to down-weight the presence of an actor/director if he or she has acted or directed in relatively more movies. It doesn't 
+  make much intuitive sense.now, our data is present in the form of "stringified" lists , we need to convert it into a safe and usable structure
 
