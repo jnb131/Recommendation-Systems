@@ -14,7 +14,8 @@ Demographic Filtering
   considered better than the movie with 7.8 as as average rating but 40 votes. So, I'll be using IMDB's weighted rating (wr) which is given as :-
   
   
-        ![image](https://user-images.githubusercontent.com/56895070/121231713-5b815780-c8ae-11eb-87d5-9a36994fedc2.png)  
+   ![image](https://user-images.githubusercontent.com/56895070/121231713-5b815780-c8ae-11eb-87d5-9a36994fedc2.png)  
+
    where,
 
   v is the number of votes for the movie;
