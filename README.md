@@ -55,7 +55,7 @@ In this recommender system the content of the movie (overview, cast, crew, keywo
   We will use the same score above to find similarity and output the top similarity
   
 # Collabrative Filtering
-  Using K Nearest Neighbour we will find the most similar users in item-item recommendation system where the ratings on item(int this case movies) will be given to 
+  Using K Nearest Neighbour we will find the most similar users in item-item recommendation system where the ratings on item(int this case books) will be given to 
   on users which are similar to them based on the rating given on the same movies by the other most smilar users this more optimal than user-user which helps to 
   capture the dynamic nature of the user
   For similarity we can use cosine similarity or pearson correlation
