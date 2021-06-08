@@ -17,7 +17,8 @@ So  recommndation engines above are:
   
    ![image](https://user-images.githubusercontent.com/56895070/121231713-5b815780-c8ae-11eb-87d5-9a36994fedc2.png)  
 
-   where,
+  
+  where,
 
   v is the number of votes for the movie;
   m is the minimum votes required to be listed in the chart;
