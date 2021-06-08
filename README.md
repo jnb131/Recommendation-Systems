@@ -41,7 +41,7 @@ In this recommender system the content of the movie (overview, cast, crew, keywo
 
   We will be using the cosine similarity to calculate a numeric quantity that denotes the similarity between two movies. We use the cosine similarity score since it 
   is independent of magnitude and is relatively easy and fast to calculate. Mathematically, it is defined as follows:
-            ![image](https://user-images.githubusercontent.com/56895070/121231318-e6ae1d80-c8ad-11eb-8883-4b2f7406211e.png)
+  ![image](https://user-images.githubusercontent.com/56895070/121231318-e6ae1d80-c8ad-11eb-8883-4b2f7406211e.png)
             
   # Credits, Genres and Keywords Based Recommender
   It goes without saying that the quality of our recommender would be increased with the usage of better metadata. That is exactly what we are going to do in this 
