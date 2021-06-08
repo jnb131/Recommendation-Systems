@@ -25,10 +25,10 @@ So  recommndation engines above are:
   C is the mean vote across the whole report
   We already have v(vote_count) and R (vote_average) and C can be calculated as
 
-#Content Based Filtering
+# Content Based Filtering
 In this recommender system the content of the movie (overview, cast, crew, keyword, tagline etc) is used to find its similarity with other movies. Then the movies that are most likely to be similar are recommended.
 
-  #Plot description based Recommender
+  # Plot description based Recommender
   We will compute pairwise similarity scores for all movies based on their plot descriptions and recommend movies based on that similarity score. The plot 
   description is given in the overview feature of our dataset
   we'll compute Term Frequency-Inverse Document Frequency (TF-IDF) vectors for each overview.
@@ -42,7 +42,7 @@ In this recommender system the content of the movie (overview, cast, crew, keywo
   is independent of magnitude and is relatively easy and fast to calculate. Mathematically, it is defined as follows:
             ![image](https://user-images.githubusercontent.com/56895070/121231318-e6ae1d80-c8ad-11eb-8883-4b2f7406211e.png)
             
-  #Credits, Genres and Keywords Based Recommender
+  # Credits, Genres and Keywords Based Recommender
   It goes without saying that the quality of our recommender would be increased with the usage of better metadata. That is exactly what we are going to do in this 
   section. We are going to build a recommender based on the following metadata: the 3 top actors, the director, related genres and the movie plot keywords.
 
