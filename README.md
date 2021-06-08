@@ -51,4 +51,11 @@ In this recommender system the content of the movie (overview, cast, crew, keywo
   The next steps are the same as what we did with our plot description based recommender. One important difference is that we use the CountVectorizer() instead of 
   TF-IDF. This is because we do not want to down-weight the presence of an actor/director if he or she has acted or directed in relatively more movies. It doesn't 
   make much intuitive sense.now, our data is present in the form of "stringified" lists , we need to convert it into a safe and usable structure
-
+  We will use the same score above to find similarity and output the top similarity
+  
+# Collabrative Filtering
+  Using K Nearest Neighbour we will find the most similar users in item-item recommendation system where the ratings on item(int this case movies) will be given to 
+  on users which are similar to them based on the rating given on the same movies by the other most smilar users this more optimal than user-user which helps to 
+  capture the dynamic nature of the user
+  For similarity we can use cosine similarity or pearson correlation
+  ![image](https://user-images.githubusercontent.com/56895070/121233111-eadb3a80-c8af-11eb-9194-8bd7f0d92970.png)
